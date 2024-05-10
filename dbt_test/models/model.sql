@@ -8,8 +8,7 @@
 {% if (flags.WHICH).upper() == 'RUN' %}
 
     {% if execute %}
-
-        -- Configure the destination details    
+  
         {%- set destination_database   = 'GOVERNANCE_'+(target.name).upper() -%}
         {%- set read_config_table      = run_query('SELECT * FROM ' + destination_database + '.DATA_META.CONFIG_DATA_PROFILE') -%}
 
