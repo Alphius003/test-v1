@@ -7,7 +7,6 @@
 
 {%- endmacro -%}
 
--- To check the column is date/time or not
 
 {%- macro is_date_or_time(dtype) -%}
 
